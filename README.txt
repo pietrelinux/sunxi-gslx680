@@ -1,25 +1,22 @@
 About
 =====
 
-This is a gslx680 driver for the sunxi (AllWinner) platform.
-The aim is to make the gslx680 usable with a GNU/Linux build.
-The Android build has not been removed, but it has not been tested.
+Este es un controlador gslx680 para la plataforma sunxi (AllWinner).
+El objetivo es hacer que el gslx680 se pueda utilizar con una versión de GNU / Linux.
+La compilación de Android no se ha eliminado, pero no se ha probado.
 
-The source was originally from:
+El codigo fuente proviene del siguiente enlace:
 
 http://code.google.com/p/yuandao-n90-window-dual-core-2/source/browse/drivers/input/touchscreen/gslx680_ts.c
 
-This was the only source for the gslx680 available.
+Esta era la única fuente para gslx680 disponible.
 
-It has been:
+Ha sido:
 
-* Ported to the sunxi platform (AllWinner).
-* Changed to load firmware from a separate file.
-* Given extracted firmware from an Android driver for a 7inch A13
-  tablet.
-* Modified to also support normal single point touch alongside the
-  existing multi touch.
-
+* Portado a la plataforma sunxi (AllWinner).
+* Modificado para cargar firmware desde un archivo separado.
+* Firmware extraído de un controlador de Android para un tableta de 7 pulgadas A13.
+* Modificado para admitir también el toque normal de punto único junto con el multi toque actual.
 
 Firmware Instructions
 =====================

@@ -15,7 +15,7 @@ Ha sido:
 
 * Portado a la plataforma sunxi (AllWinner).
 * Modificado para cargar firmware desde un archivo separado.
-* Firmware extraído de un controlador de Android para un tableta de 7 pulgadas A13.
+* El Firmware se puede extraer para tablets de 7,8,10 pulgadas A13,A23,A33
 * Modificado para admitir también el toque normal de punto único junto con el multi toque actual.
 
 Firmware Instructions

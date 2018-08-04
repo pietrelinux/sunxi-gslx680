@@ -1,4 +1,4 @@
-About
+Acerca de
 =====
 
 Este es un controlador gslx680 para la plataforma sunxi (AllWinner).
@@ -18,27 +18,28 @@ Ha sido:
 * El Firmware se puede extraer para tablets de 7,8,10 pulgadas A13,A23,A33
 * Modificado para admitir también el toque normal de punto único junto con el multi toque actual.
 
-Firmware Instructions
+Instrucciones para el firmware
 =====================
 
-The firmware included is from a 7inch tablet with a 800x480 screen.
-If this is does not match your tablet, you will need to extract the
-firmware from the existing Android tablet.
+Para poder utilizar la pantalla táctil tienes que obtener
+el firmware necesitas extraer el modulo existente en tu Tablet android.
 
-It will be under a path like:
-/system/vendor/modules/gslx680.ko
 
-Copy this to a SD card or use a GNU/Linux chroot to scp it over, or use
-adb pull.
+Esto suele estar en la siguiente ruta.
+/system/vendor/modules/gslX680.ko
 
-On your build machine, on the command line, use the script
-'firmware/fw_extractor' to extract the firmware to its own file.
+La forma mas rapida para realizar esto es con adb
+
+adb pull /system/vendor/modules/gslX680.ko /home/user
+
+En tu maquina de compilación, en la terminal usa este script para extraer el driver del modulo de android
+'firmware/fw_extractor' 
 
 ./firmware/fw_extractor my_android_gslx680.ko my_tablets.fw
 
-The Android driver may well contain multiple firmwares to support
-different hardware configurations with the same driver. The extractor
-will spit those out as seperate files. We currently have no way of
+El driver de android puede contener multiples firmwares para soportar diferentes coinfiguraciones de software en el mismo driver.
+ 
+The extractorwill spit those out as seperate files. We currently have no way of
 knowing which is right for your device. You will have to try each.
 
 
